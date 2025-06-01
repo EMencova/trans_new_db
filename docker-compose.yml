@@ -1,0 +1,52 @@
+networks:
+  pong-network:
+    name: pong-network
+    driver: bridge
+
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: ./nginx/Dockerfile
+    ports:
+      - "443:443"
+      - "80:80"
+    depends_on:
+      - app
+    networks:
+      - pong-network
+
+  app:
+    build:
+      context: ./pong_backend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./pong_backend:/app
+      - ./pong_backend/data:/app/data
+      - ./frontend:/frontend
+    networks:
+      - pong-network
+
+  # frontend:
+  #   build:
+  #     context: ./frontend
+  #     dockerfile: Dockerfile
+  #   volumes:
+  #     - frontend-dist:/app/dist
+  #   entrypoint: [ "sh", "-c", "npm run build" ]
+  #   networks:
+  #     - pong-network
+
+volumes:
+  sqlite-data:
+
+
+
+
+
+
+

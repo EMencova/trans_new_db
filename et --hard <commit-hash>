@@ -1,0 +1,38 @@
+[33m86084b3[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m failed to connect when trying to register new user
+[33mb6fffd0[m table players set in sqlite and works
+[33m9654896[m sqlite changed
+[33m9758095[m Merge pull request #2 from EMencova/feature/frontend
+[33m6bf98e5[m[33m ([m[1;31morigin/feature/frontend[m[33m)[m Add initAuth in App
+[33me3eae69[m Add auth logic
+[33mc787cde[m Created PasswordInput
+[33mfa246c0[m Add types to include
+[33m51d9098[m Change comment
+[33md4642e5[m Gitignore
+[33me09ceee[m Change style
+[33mb6384bf[m Add Game components
+[33mb9231e2[m Add logic
+[33mbe3180a[m Add types
+[33mc1a6131[m Change style
+[33m5bd08c8[m Add style to body and pong in icon
+[33m1218d12[m Remove version from docker
+[33m5707172[m Add simple login/register
+[33mbddfe1e[m Fix dockerfile nginx
+[33m156961f[m Remove frontend from docker-compose, it will be build inside nginx
+[33me4b3816[m Add frontend build into nginx dockerfile
+[33mc2129c8[m Comment CMD from dockerfile frontend
+[33m0f47de5[m Add Pong.ts
+[33mfae1ec3[m Add Pong.ts
+[33mf9d5397[m Add avatar img
+[33m9e2f2d8[m Add frontend and nginx to dockercompose
+[33mad5daec[m Add readme and gitignore
+[33m5c21fc5[m Changes in backend folder (dependancies)
+[33mc3000a6[m Add nginx
+[33mebf70e9[m Add .env.template
+[33mae634ba[m Fix frontend dockerfile
+[33m28a60fd[m Merge branch 'eliska' into feature/frontend
+[33mc599bc5[m Add tailwindcss
+[33m0258ed3[m Add doc to run the frontend
+[33m83c5e7a[m First commit
+[33mde390d9[m db + server
+[33m72929fd[m start
+[33m01c6d06[m start
