@@ -10,23 +10,36 @@ Follow these steps to set up and run the project:
 make
 ```
 
-### 2. Configure Database User (First Time Only)
+### 2. Access the SQLITE container
 
-After building, you need to grant permissions to the database user specified in your `.env` file.
+1. Access the sqlite container:
 
-1. Access the MySQL container:
+   	```
 
-	```bash
-	docker exec -it ft_transcendence-db-1 mysql -u root -p
+ 	 cd pong_backend/data
 	```
 
-2. In the MySQL prompt, run the following commands (replace `tu_password` and `ponguser` with the password and user from your `.env`):
+	```sh
+	 docker exec -it trans_app_1 sh
 
-	```sql
-	CREATE USER 'ponguser'@'%' IDENTIFIED BY 'tu_password';
-	GRANT ALL PRIVILEGES ON *.* TO 'ponguser'@'%';
-	FLUSH PRIVILEGES;
 	```
+	```
+	 sqlite3 database.sqlite
+	```
+
+3. In the SQLITE prompt see table players
+
+	```
+	 .tables
+	```
+
+ 	```
+	 SELECT * FROM players;
+	```
+   
+   
+	
+WORKING ON THIS 
 
 ### 3. Verify User Permissions
 
